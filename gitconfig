@@ -1,0 +1,44 @@
+[alias]
+  bl = blame
+  br = branch
+  ci = commit
+  cl = clone --recurse-submodules
+  co = checkout
+  cp = cherry-pick
+  d = diff
+  dump = cat-file -p
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  l = log --pretty=oneline -n 20 --graph --abbrev-commit
+  ls = log --oneline
+  s = status -s
+  sh = stash
+  shd = stash drop
+  shl = stash list
+  shp = stash pop
+  st = status
+  stash-unstaged = stash -k -u
+  type = cat-file -t
+  unstage = reset HEAD --
+
+  # Show the diff between the latest commit and the current state
+  df = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+
+  # `git di $number` shows the diff between the state `$number` revisions ago and the current state
+  di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
+
+
+[user]
+	email = nlarzon@gmailcom
+	name = Niklas Larsson
+
+[color]
+	ui = true
+
+[fetch]
+    prune = true
+
+[push]
+	default = simple
+
+[gui]
+	commitmsgwidth = 52
