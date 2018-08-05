@@ -39,5 +39,8 @@
 [push]
 	default = simple
 
+[core]
+	whitespace = warn
+
 [gui]
 	commitmsgwidth = 52
