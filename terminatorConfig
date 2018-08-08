@@ -1,0 +1,78 @@
+[global_config]
+  enabled_plugins = APTURLHandler, LaunchpadCodeURLHandler, Logger, LaunchpadBugURLHandler
+  title_transmit_bg_color = "#0040c8"
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = True
+      last_active_term = fe5e774c-2e6b-461f-ab5a-9938e287544f
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 1920:0
+      size = 1920, 1200
+      title = Terminator
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 954
+      ratio = 0.49921875
+      type = HPaned
+    [[[terminal2]]]
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = fe5e774c-2e6b-461f-ab5a-9938e287544f
+    [[[terminal3]]]
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 1997e0c1-a373-484f-be31-de7f71cc7ce1
+  [[New Layout]]
+    [[[child0]]]
+      fullscreen = True
+      last_active_term = fe5e774c-2e6b-461f-ab5a-9938e287544f
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 1920:0
+      size = 1920, 1200
+      title = elannis@elxag9mrmc2: ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 954
+      ratio = 0.49921875
+      type = HPaned
+    [[[terminal2]]]
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = fe5e774c-2e6b-461f-ab5a-9938e287544f
+    [[[terminal3]]]
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 1997e0c1-a373-484f-be31-de7f71cc7ce1
+[plugins]
+[profiles]
+  [[default]]
+    background_image = None
+    cursor_shape = underline
+    font = Source Code Pro Medium 12
+    scrollback_infinite = True
+    use_system_font = False
+  [[New Profile]]
+    background_image = None
+    font = Monospace 12
+    scrollback_infinite = True
+    use_system_font = False
