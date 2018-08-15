@@ -65,7 +65,7 @@ function allpod {
 # ------------------------------------
 
 # Get latest container ID
-alias dl="docker ps -l -q"
+alias ddl="docker ps -l -q"
 
 # Get container process
 alias dps="docker ps"
